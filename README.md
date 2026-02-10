@@ -76,3 +76,19 @@ git clone https://github.com/bhavishyagupta11/interactive-question-management-sh
 npm install
 npm run dev
 
+## 📋 Assignment Requirement Mapping
+
+| Requirement | Status |
+|------------|--------|
+| Single Page Application | ✅ Implemented using React (Vite) |
+| Add / Edit / Delete Topics | ✅ Implemented |
+| Add / Edit / Delete Sub-topics | ✅ Implemented |
+| Add / Edit / Delete Questions | ✅ Implemented |
+| Drag-and-drop reordering | ✅ Implemented using @hello-pangea/dnd |
+| State management | ✅ Implemented using Zustand |
+| CRUD APIs without database | ✅ Implemented using mock APIs with localStorage |
+| Sample dataset initialization | ✅ Implemented |
+| Clean & intuitive UI | ✅ Codolio-inspired dark UI |
+| Deployment link | ✅ Provided via Vercel |
+
+
