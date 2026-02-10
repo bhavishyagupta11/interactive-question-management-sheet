@@ -65,3 +65,10 @@ The application initializes its state using a provided sample dataset, which is 
 ### Clone the repository
 ```bash
 git clone https://github.com/bhavishyagupta11/interactive-question-management-sheet.git
+
+## ▶️ Running the Project Locally
+
+```bash
+npm install
+npm run dev
+
