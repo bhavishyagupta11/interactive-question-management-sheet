@@ -1,16 +1,67 @@
-# React + Vite
+# Interactive Question Management Sheet
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive single-page web application that allows users to manage a hierarchical set of questions organized by topics and sub-topics.  
+The application supports full CRUD operations, drag-and-drop reordering, and a clean, intuitive UI inspired by the Codolio platform.
 
-Currently, two official plugins are available:
+This project was built as part of an assignment to demonstrate frontend architecture, state management, and API integration without a backend database.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Core Functionality
+- Create, edit, and delete **Topics**
+- Create, edit, and delete **Sub-topics**
+- Create, edit, and delete **Questions**
+- Drag-and-drop reordering of:
+  - Topics
+  - Sub-topics
+  - Questions
 
-## Expanding the ESLint configuration
+### Technical Highlights
+- Single Page Application (SPA)
+- Multi-level drag-and-drop support
+- Persistent state across page reloads
+- Clean separation of UI, state, and API layers
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+- **Frontend Framework:** React (Vite)
+- **State Management:** Zustand
+- **Styling:** Tailwind CSS
+- **Drag & Drop:** @hello-pangea/dnd
+- **Mock Backend:** localStorage-based CRUD APIs
+
+---
+
+## 🔌 Mock CRUD API Implementation (No Database)
+
+To satisfy the requirement of API integration without using a database, the application implements a **mock backend API layer**.
+
+### How it works:
+- A dedicated API module simulates backend CRUD operations
+- Data is stored and retrieved using `localStorage`
+- All API methods are asynchronous to mimic real network behavior
+
+### Supported Operations:
+- **READ:** Load sheet data on application startup
+- **CREATE / UPDATE:** Persist changes when topics, sub-topics, or questions are added, edited, or reordered
+- **DELETE:** Remove topics, sub-topics, or questions
+
+This approach closely mirrors real-world frontend–backend interaction without requiring a server or database.
+
+---
+
+## 📊 Initial Data
+
+The application initializes its state using a provided sample dataset, which is transformed into the internal data structure on first load.
+
+---
+
+## ▶️ Running the Project Locally
+
+### Clone the repository
+```bash
+git clone https://github.com/bhavishyagupta11/interactive-question-management-sheet.git
