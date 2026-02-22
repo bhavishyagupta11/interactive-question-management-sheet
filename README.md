@@ -1,7 +1,7 @@
 # Interactive Question Management Sheet
 
 An interactive single-page web application that allows users to manage a hierarchical set of questions organized by topics and sub-topics.  
-The application supports full CRUD operations, drag-and-drop reordering, and a clean, intuitive UI inspired by the Codolio platform.
+The application supports full CRUD operations, drag-and-drop reordering, and a clean, intuitive UI inspired by the Codolio and TakeUForward platform.
 
 This project was built as part of an assignment to demonstrate frontend architecture, state management, and API integration without a backend database.
 
